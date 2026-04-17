@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fb;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #0b3d91;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("../images/dgc1.jpeg") no-repeat center center;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* CONTAINER */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+/* Section */
+.college-section {
+    padding: 70px 20px;
+    background: linear-gradient(to right, #f8f9fb, #eef2f7);
+}
+
+/* Container */
+.college-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Text */
+.college-text {
+    flex: 1;
+}
+
+/* Heading */
+.college-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Highlight line */
+.highlight {
+    font-style: italic;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+.college-text p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Last line emphasis */
+.last-line {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Image */
+.college-img {
+    flex: 1;
+    text-align: center;
+}
+
+.college-img img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    transition: 0.4s ease;
+}
+
+/* Image hover */
+.college-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .college-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* FEATURES */
+/* Section */
+.features {
+    padding: 60px 20px;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+/* Title */
+.center-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Grid */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Card */
+.feature-card {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Icon */
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Hover Effect (simple & smooth) */
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.feature-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Text */
+.feature-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Section */
+.mv-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 60px 20px;
+    background: #f4f6f9;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.mv-card {
+    width: 450px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.mv-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.mv-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Text */
+.mv-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mv-card {
+        width: 100%;
+    }
+}
+
+
+/* Social Icons */
+
+/* Footer Styling */
+.footer {
+    background-color: #352c7b;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Address */
+.footer-address {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Contact */
+.footer-contact {
+    margin: 10px 0;
+}
+
+.footer-contact span {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+/* Logo */
+.footer-logo {
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+/* Bottom Bar */
+.footer-bottom {  
+      background-color: #312c7b;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    margin: 5px 15px;
+}
+
+
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+/* Container */
+.card-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Card Design */
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Title */
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Description */
+.card p {
+    padding: 0 15px 20px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+/* Section */
+.management-section {
+    padding: 60px 20px;
+    background: #f4f6f9;
+}
+
+/* Title */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Container → 2 cards per row */
+.management-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Card */
+.management-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+
+    /* Glass look */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Transparent shine overlay */
+.management-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transform: translateX(-100%);
+    transition: 0.6s;
+}
+
+/* Hover effect */
+.management-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Shine animation */
+.management-card:hover::after {
+    transform: translateX(100%);
+}
+
+/* Image */
+.management-card img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Content */
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.position {
+    font-size: 14px;
+    color: #007bff;
+    display: block;
+    margin: 5px 0 10px;
+    transition: 0.3s;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Text color hover */
+.management-card:hover h3 {
+    color: #007bff;
+}
+
+.management-card:hover .position {
+    color: #0056b3;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+    .management-container {
+        grid-template-columns: 1fr;
+    }
+
+    .management-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .management-card img {
+        margin: auto;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/student-dashboard.css">
+
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>🎓 Student</h2>
+    <ul>
+        <li onclick="showProfile()">My Profile</li>
+        <li onclick="showDocuments()">Documents</li>
+        <li onclick="logout()">Logout</li>
+    </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<div class="topbar">
+    <h2>Student Dashboard</h2>
+</div>
+
+<div class="card-box">
+
+    <!-- PROFILE SECTION -->
+    <div id="profileSection">
+
+        <div class="card">
+            <h3>Profile</h3>
+            <p><b>Name:</b> <span id="name"></span></p>
+            <p><b>Email:</b> <span id="email"></span></p>
+            <p><b>Course:</b> <span id="course"></span></p>
+        </div>
+
+        <div class="card">
+            <h3>Admission Status</h3>
+            <div id="status" class="status pending">Pending</div>
+        </div>
+
+    </div>
+
+    <!-- DOCUMENT SECTION -->
+    <div id="documentSection" style="display:none;">
+
+        <div class="card">
+            <h3>Documents</h3>
+
+            <button onclick="uploadDoc()">Upload Document</button>
+            <br>
+            <button type="button" onclick="downloadSlip()" id="downloadBtn" style="display:none;">
+    📄 Download Slip
+</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- JS FILES -->
+<script src="../js/main.js"></script>
+<script src="../js/student-dashboard.js"></script>
+
+</body>
+</html>

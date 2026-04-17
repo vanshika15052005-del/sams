@@ -1,0 +1,130 @@
+body {
+    font-family: Arial;
+
+    /* FIX: full screen height instead of 700px */
+    min-height: 100vh;
+    margin: 0;
+
+    /* Background image fix */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../images/dgc1.jpeg") no-repeat center center;
+
+    background-size: cover;
+
+    /* FIX: better layout for full form */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* important for long form */
+    
+    padding: 20px;
+    overflow-y: auto;
+
+    color: white;
+    text-align: center;
+}
+
+/* FORM CONTAINER */
+.container {
+    width: 700px;
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    color: black;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HOME BUTTON */
+.home-btn {
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* FIX for small screens */
+}
+
+/* INPUT GROUP */
+.input-group {
+    flex: 1;
+    margin-top: 10px;
+    min-width: 250px;
+}
+
+/* LABEL */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* INPUT FIELDS */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* TEXTAREA */
+textarea {
+    height: 80px;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* SUBMIT BUTTON */
+.submit {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+}
+
+/* RESET BUTTON */
+.reset {
+    background: gray;
+    color: white;
+    padding: 10px;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+}
+
+/* STATUS BUTTON */
+.status-btn {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}

@@ -1,0 +1,67 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background:lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+/* Header */
+header {
+    background: #4b6fa5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Form Box */
+.form-container {
+    width: 350px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Inputs */
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background: #3c5f8a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
